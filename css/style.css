@@ -1,0 +1,139 @@
+/* Общие стили */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+/* Стили addresses */
+
+.addresses {
+  width: 30%;
+  background-color: #fff;
+}
+
+.addresses__container {
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.addresses__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.addresses__item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addresses__item:hover {
+  background-color: #f7f6fb;
+}
+
+.addresses__item:not(:last-child) {
+  border: 1px solid #f7f6fb;
+}
+
+.addresses__button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px 16px 16px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.addresses__metro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addresses__icon--red path {
+  fill: #d6083b;
+}
+
+.addresses__icon--blue path {
+  fill: #0078c9;
+}
+
+.addresses__icon--green path {
+  fill: #009a49;
+}
+
+.addresses__icon--orange path {
+  fill: #eb7220;
+}
+
+.addresses__icon--purple path {
+  fill: #702785;
+}
+
+.addresses__icon--brown path {
+  fill: #8d5b2d;
+}
+
+.addresses__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.addresses__title--red {
+  color: #d6083b;
+}
+
+.addresses__title--blue {
+  color: #0078c9;
+}
+
+.addresses__title--green {
+  color: #009a49;
+}
+
+.addresses__title--orange {
+  color: #eb7220;
+}
+
+.addresses__title--purple {
+  color: #702785;
+}
+
+.addresses__title--brown {
+  color: #8d5b2d;
+}
+
+.addresses__address {
+  width: max-content;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border-bottom: 1px dashed #19191c;
+}
+
+/* Cтили карты */
+
+#map {
+  width: 80%;
+  height: 700px;
+}
