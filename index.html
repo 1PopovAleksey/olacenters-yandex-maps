@@ -10,7 +10,6 @@
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c69fc0c4-1138-440a-a6d2-d7f809bbd0c6"
       type="text/javascript"
     ></script>
-    <script src="js/main.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -19,7 +18,12 @@
         <div class="addresses__container">
           <ul class="addresses__list">
             <li class="addresses__item">
-              <button class="addresses__button">
+              <button
+                id="address-btn"
+                data-lat="59.930611"
+                data-lng="30.371168"
+                class="addresses__button"
+              >
                 <div class="addresses__metro">
                   <svg
                     class="addresses__icon addresses__icon--red"
@@ -42,7 +46,12 @@
               </button>
             </li>
             <li class="addresses__item">
-              <button class="addresses__button">
+              <button
+                id="address-btn"
+                data-lat="59.888410"
+                data-lng="30.320342"
+                class="addresses__button"
+              >
                 <div class="addresses__metro">
                   <svg
                     class="addresses__icon addresses__icon--blue"
@@ -65,7 +74,12 @@
               </button>
             </li>
             <li class="addresses__item">
-              <button class="addresses__button">
+              <button
+                id="address-btn"
+                data-lat="59.941249"
+                data-lng="30.231148"
+                class="addresses__button"
+              >
                 <div class="addresses__metro">
                   <svg
                     class="addresses__icon addresses__icon--green"
@@ -229,5 +243,6 @@
       <!-- Карта -->
       <div id="map"></div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
